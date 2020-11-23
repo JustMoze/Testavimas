@@ -1,0 +1,43 @@
+@import "../../../index.scss";
+
+nav {
+	background-color: $ReflixBlack;
+}
+.col {
+	background-color: $white;
+	border-radius: 15px;
+	position: relative;
+	height: 100%;
+	padding: 15px 15px 30px !important;
+}
+.col h1 {
+	padding: 20px;
+	text-align: center;
+	font-family: $montserrat;
+	font-size: 1.75rem;
+}
+h1 span {
+	color: #e50914;
+	font-size: 2.5rem;
+}
+body {
+	background-color: $ReflixBlack;
+}
+.resetRow {
+	height: 100%;
+	border-radius: 5px;
+	width: 100%;
+	position: relative;
+	margin-top: 10% !important;
+	padding: 7% 1%;
+}
+.reset-container {
+	padding: 30px;
+	color: $white;
+	text-align: center;
+}
+.resetInfo {
+	margin-top: 15%;
+	margin-bottom: 10%;
+	text-align: start;
+}

@@ -1,0 +1,69 @@
+@import "../../../index.scss";
+
+nav {
+	background-color: $ReflixBlack;
+}
+section#content {
+	margin-top: 80px;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	background-image: linear-gradient(to bottom, transparent -20%, $ReflixBlack 85%), url("../../../assets/coverIMG.png");
+}
+#titleSection {
+	text-align: center;
+	color: white;
+	margin-top: 20;
+	padding-top: 7%;
+}
+#titleSection h1 {
+	font-size: 3rem;
+}
+#titleSection span {
+	color: $ReflixTitle;
+	font-size: 3rem;
+	padding-left: 10px;
+}
+section #options {
+	width: 100%;
+	display: flex;
+	padding-top: 5%;
+	position: relative;
+}
+#browse {
+	width: 50%;
+	position: relative;
+}
+#login {
+	padding-top: 50px;
+	width: 50%;
+	position: relative;
+}
+#browse #cinema {
+	border-radius: 100px;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+	bottom: -70px;
+	width: 200px;
+	height: 200px;
+}
+#login #arrow {
+	border-radius: 100px;
+	cursor: pointer;
+	position: absolute;
+	left: 20px;
+	bottom: -70px;
+	width: 150px;
+	height: 150px;
+}
+section #options img {
+	width: 100%;
+	height: 100%;
+}
+p {
+	text-align: center;
+	color: $ReflixLighterGrey;
+	font-size: 1.25rem;
+	font-style: italic;
+}

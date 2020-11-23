@@ -1,0 +1,44 @@
+@import "../../index.scss";
+
+.carousel {
+    position: relative;
+    height: 400px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5%;
+}
+div .carouselContent {
+    height: 100% !important;
+}
+div .carouselContent {
+    height: 100% !important;
+}
+div .rec-carousel {
+    height: 100% !important;
+}
+div .rec-slider-container {
+    height: 100% !important;
+}
+div .rec-slider {
+    height: 100% !important;
+}
+div .rec-item-wrapper {
+    height: 100% !important;
+}
+[class^="rec rec-swipable"] {
+    height: 100% !important;
+}
+.rec-pagination {
+    display: none !important;
+}
+.play {
+    height: auto !important;
+}
+button[tabindex='0'] {  
+    background-color: $ReflixGrey;
+}
+button[tabindex='0']:hover {
+    background-color: $ReflixTitle;
+    outline: 0;
+}

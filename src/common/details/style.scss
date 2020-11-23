@@ -1,0 +1,46 @@
+@import "../../index.scss";
+svg {
+	width: 30px !important;
+	height: 30px !important;
+}
+div .star-ratings {
+	line-height: 0px !important;
+}
+.coverRow {
+	position: absolute;
+	bottom: 10%;
+	padding-left: 20px;
+}
+.detailsClumn h5 {
+	display: -webkit-box;
+	font-weight: bold;
+	color: $white;
+	padding-top: 1%;
+}
+.detailsClumn h1 {
+	color: $white;
+	font-weight: 700;
+}
+.secondRow {
+	position: relative;
+	height: 100%;
+
+    margin-bottom: 30px;
+}
+.firstCol {
+    position: relative;
+}
+.posterInfo {
+    color: $white;
+}
+div .makeStyles-paper-8 {
+	overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+	.firstCol {
+		margin-bottom: 50% !important;
+	}
+}

@@ -1,0 +1,89 @@
+@import "../../index.scss";
+
+nav .logo {
+  float: left;
+  cursor: pointer;
+}
+.logo p {
+  color: $ReflixTitle;
+  font-size: 2.5rem;
+  line-height: 70px;
+  font-style: normal;
+}
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+nav.black {
+  background-color: $ReflixBlack;
+}
+nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  @media (max-width: 700px) {
+   display: inline;
+  }
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li div {
+  color: $white;
+  padding: 5px 20px;
+  text-align: center;
+  margin-top: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-family: $roboto;
+}
+nav ul li div.active,
+nav ul li div:hover {
+    cursor: pointer;
+  color: $white;
+  background-color: $ReflixTitle;
+  text-decoration: none;
+}
+nav ul ul {
+  position: absolute;
+  z-index: 1;
+  top: 65px;
+  padding-top: 17px;
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    top: 65px;
+    left: 0;
+    padding-top: 17px;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+.navulul {
+  background-color: $ReflixBlack;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 120px;
+  float: none;
+  display: list-item;
+  height: 40px;
+}
+nav ul ul li div {
+  color: $white;
+  display: inline;
+}

@@ -1,0 +1,35 @@
+@import "../../../index.scss";
+
+nav {
+	background-color: $ReflixBlack;
+}
+nav ul ul {
+	background-color: $ReflixBlack;
+}
+.body {
+	height: 100%;
+	background-image: linear-gradient(to bottom, transparent 0%, $ReflixBlack 0%, $ReflixGrey) !important;
+	padding: 0;
+	padding-bottom: 1%;
+	position: relative;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.loader {
+	height: 100%;
+	width: 100%;
+	margin-top: 15% auto;
+	div {
+		display: block;
+	}
+	svg {
+		margin-left: 47%;
+		margin-top: 20%;
+		height: 100px !important;
+		width: 100px !important;
+	}
+}
+.carousel button {
+	display: none;
+}
