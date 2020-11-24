@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   height: 400px;
   position: relative;
@@ -30,25 +30,25 @@ const Content = styled.div`
 
 const ContentColumn = styled.div``;
 
-const Title = styled.span`
+export const Title = styled.span`
+color: ${props => props.color};
   font-size: 24px;
   font-weight: 900;
   display: block;
   margin-bottom: 8px;
-  color: ${props => props.color};
 `;
 
-const Subtitle = styled.span`
+export const Subtitle = styled.span`
+color: ${props => props.color};
   font-size: 14px;
-  color: ${props => props.color};
 `;
 
-const TagContainer = styled.div`
+export const TagContainer = styled.div`
+  background-color: ${props => props.tagBg};
+  color: ${props => props.tagColor};
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: ${props => props.tagBg};
-  color: ${props => props.tagColor};
   font-size: 12px;
   font-weight: 500;
   width: 80px !important;
@@ -60,9 +60,9 @@ const TagContainer = styled.div`
   color: white;
 `;
 
-const IconContainer = styled.div`
-  cursor: pointer;
+export const IconContainer = styled.div`
   color: ${props => props.color};
+  cursor: pointer;
 `;
 
 const Card = ({
@@ -78,9 +78,9 @@ const Card = ({
   bottomIconSize = 2,
   bottomIconColor = "#e50914",
   centerIconName,
-  removeIconName,
   centerIconSize = 3,
   centerIconColor = "white",
+  removeIconName,
   bgPhoto,
   onClick,
   onClickRemove
@@ -92,10 +92,10 @@ const Card = ({
       </TagContainer>
     )}
     {removeIconName && <IconContainer color={bottomIconColor} style={{position: 'absolute', top: '5%', left: '5%'}}>
-        <i className={`fas fa-times fa-1x`} onClick={() => onClickRemove(id)} />
+        <i className={`fas fa-times fa-1x`} id="remove" onClick={() => onClickRemove(id)} />
       </IconContainer>}
     {centerIconName && (
-      <IconContainer onClick={() => onClick(id)} color={centerIconColor} style={{position: 'absolute', top: '45%'}}>
+      <IconContainer id="IconContainer" onClick={() => onClick(id)} color={centerIconColor} style={{position: 'absolute', top: '45%'}}>
         <i className={`${centerIconName} fa-${centerIconSize}x`} />
       </IconContainer>
     )}

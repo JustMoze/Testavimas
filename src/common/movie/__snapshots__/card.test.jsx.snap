@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders Renders card correctly 1`] = `
+<styled.div
+  bgPhoto="https://i.pinimg.com/originals/33/b8/69/33b869f90619e81763dbf1fccc896d8d.jpg"
+>
+  <styled.div
+    tagBg="#E33C36"
+    tagColor="#595959"
+  >
+    <div>
+      Tagas
+    </div>
+  </styled.div>
+  <styled.div
+    color="#e50914"
+    style={
+      Object {
+        "left": "5%",
+        "position": "absolute",
+        "top": "5%",
+      }
+    }
+  >
+    <i
+      className="fas fa-times fa-1x"
+      id="remove"
+      onClick={[Function]}
+    />
+  </styled.div>
+  <styled.div
+    color="#fffads"
+    id="IconContainer"
+    onClick={[Function]}
+    style={
+      Object {
+        "position": "absolute",
+        "top": "45%",
+      }
+    }
+  >
+    <i
+      className="font-awesome fa-3x"
+    />
+  </styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.span
+        color="#ffffff"
+      >
+        Movie dark
+      </styled.span>
+      <styled.span
+        color="#595959"
+      >
+        Comedy
+      </styled.span>
+    </styled.div>
+    <styled.div
+      color="#e50914"
+    >
+      <i
+        className="font-awesome fa-2x"
+      />
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
